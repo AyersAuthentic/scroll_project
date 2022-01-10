@@ -4,17 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Scroll</title>
-    <!-- font-awesome -->
+    <!-- Font-Awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
-    <!-- styles -->
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>scroll project</h1>
-    <!-- javascript -->
+    <!-- Header -->
+    <header id="home">
+      <!-- Navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <div class="nav-header">
+            <img src="./logo.svg" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">services</a>
+              </li>
+              <li>
+                <a href="#tours" class="scroll-link">tours</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>scroll project</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem eos
+            nulla vero eum esse possimus atque earum enim, ducimus cumque?
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white"> explore tours </a>
+        </div>
+      </div>
+    </header>
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about <span>us</span></h2>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section id="services" class="section">
+      <div class="title">
+        <h2>our <span>services</span></h2>
+      </div>
+    </section>
+    <!-- Tours Section -->
+    <section id="tours" class="section">
+      <div class="title">
+        <h2>featured <span>us</span></h2>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; backroads travel tours company 
+        <span class="date">2020</span>
+        .all rights reserved
+      </p>
+    </footer>
+    <!-- back to top link -->
+    <a href="#home" class="scroll-link top-link">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Javascript -->
     <script src="app.js"></script>
   </body>
 </html>
