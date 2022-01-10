@@ -16,8 +16,10 @@ navToggle.addEventListener('click', ()=> {
     //linksContainer.classList.toggle("show-links");
     // Dynamically calc link height
     // Parent container doesn't have true height (set to zero)
-    const containerHeight = linksContainer.getBoundingClientRect();
+    const containerHeight = linksContainer.getBoundingClientRect().height;
+    console.log(containerHeight);
     const linksHeight = links.getBoundingClientRect().height;
+    console.log(linksHeight);
     
     if(containerHeight === 0) {
         linksContainer.style.height = `${linksHeight}px`;
